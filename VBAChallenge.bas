@@ -98,4 +98,15 @@ ws.Cells(4, 16) = ws.Cells(iCount, 9)
 Next ws
 
 End Sub
+Sub StockAnalysisClear()
+
+
+'Cycle through the sheets
+For Each ws In Worksheets
+ws.Range("I:Q").Clear
+
+Next ws
+
+
+End Sub
 
